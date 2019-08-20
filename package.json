@@ -1,0 +1,38 @@
+{
+  "name": "script-vision",
+  "version": "1.0.0",
+  "description": "Javascript Visualizer for Algorithms, Basic functions and methods written in Javascript",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server/server.js",
+    "visual": "nodemon build/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MShinControl/script-vision.git"
+  },
+  "author": "Mark Shin",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.12.3",
+    "prop-types": "^15.6.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.3.1",
+    "react-redux": "^7.1.0",
+    "redux": "^4.0.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.6",
+    "nodemon": "^1.18.9",
+    "webpack": "^4.39.2",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.8.0"
+  },
+  "bugs": {
+    "url": "https://github.com/MShinControl/script-vision/issues"
+  },
+  "homepage": "https://github.com/MShinControl/script-vision#readme"
+}
