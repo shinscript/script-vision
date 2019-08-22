@@ -1,4 +1,3 @@
-const webpack = require('webpack');
 const path = require('path');
 
 module.exports = {
@@ -6,10 +5,10 @@ module.exports = {
     entry: "./client/index.js",
     devServer: {
         port:8080,
-        publicPath: '/build/'
+        publicPath: "/build/"
     },
     output: {
-        path: path.join(__dirname, '/build'),
+        path: path.join(__dirname, 'build'),
         filename: 'bundle.js',
     },
     module: {
@@ -23,7 +22,16 @@ module.exports = {
                         presets: ['@babel/preset-env', '@babel/preset-react']
                     }               
                 }
+            },
+            {
+                test: /\.css$/,
+                use: ['style-loader', 'css-loader']
+            },
+            {
+                test: /\.png$/,
+                use: ['file-loader']
             }
+            
         ]
     }
 }

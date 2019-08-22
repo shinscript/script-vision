@@ -1,1 +1,5 @@
+#Node Modules package
 node_modules
+
+#Build folder
+build

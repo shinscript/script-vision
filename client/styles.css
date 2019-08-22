@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    background-color: #fcf9ea;
+}
+
+p {
+    font-weight: 400;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.main-container {
+    display:grid;
+    grid-template-rows: 50px 1fr;
+    grid-template-columns: 1fr 1fr;
+    margin: 8rem;
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    grid-column: 2 / 3;
+    grid-row: 0 / 1;
+    margin-right: 7rem;
+}
+
+button {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 10px;
+    width: 30%;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #49beb7;
+}
+
+.editor-display {
+    border: 1px solid black;
+}
+
+.visuals {
+    text-align: center;
+    height: 100%;
+    display: grid;
+    background-color: #badfdb;
+    grid-template-areas:"mb mb g g"
+                        "mb mb s s";
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 3fr 1fr;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.main-block {
+    grid-area: mb;
+    border: 1px solid black
+}
+
+.global {
+    font-weight: 800;
+    text-decoration: underline;
+    grid-area: g;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    padding: 1rem;
+}
+
+.stack {
+    font-weight: 800;
+    text-decoration: underline;
+    grid-area: s;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 1rem;
+}
+
+.code-body {
+    border: 1px solid black;
+    background-color: #ff8a5c;
+    margin: 5rem;
+}
+
+.output-block {
+    display: block;
+    margin: 5rem;
+    border: 1px solid black;
+}
+
+.context {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    border: 1px solid black;
+    background-color: #ff8a5c;
+    margin: 5rem;
+}
+
+.func-body {
+    grid-column: 1 / 2;
+    border: 1px solid black;
+    height: 100%;
+    padding-bottom: auto;
+}
+
+.func-mem {
+    grid-column: 2 / 3;
+    border: 1px solid black;
+    height: 100%;
+    padding-bottom: auto;
+}
