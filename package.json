@@ -17,7 +17,7 @@
   "dependencies": {
     "body-parser": "^1.19.0",
     "brace": "^0.11.1",
-    "express": "^4.12.3",
+    "express": "^4.17.3",
     "prop-types": "^15.6.1",
     "react": "^16.2.0",
     "react-ace": "^7.0.2",
